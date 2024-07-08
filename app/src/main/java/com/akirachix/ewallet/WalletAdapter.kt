@@ -20,7 +20,7 @@ RecyclerView.Adapter<WalletViewsHolder>() {
 
         override fun onBindViewHolder(holder: WalletViewsHolder, position: Int) {
             val expense = wallet [position]
-
+            holder.salary.text = expense.salary
             holder.amount.text = expense.amount
             holder.date.text = expense.date
         }
@@ -31,6 +31,7 @@ RecyclerView.Adapter<WalletViewsHolder>() {
     }
 
     class WalletViewsHolder(itemView: View) : ViewHolder(itemView) {
+        val salary = itemView.findViewById<TextView>(R.id.etSalary)
         val amount = itemView.findViewById<TextView>(R.id.etamount)
         val date = itemView.findViewById<TextView>(R.id.etDate)
     }
