@@ -7,15 +7,131 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+    <ImageView
+        android:id="@+id/imMoneyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income" />
+
+    <TextView
+        android:id="@+id/etMoneyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="MONEY IN"
+        app:layout_constraintStart_toEndOf="@+id/imMoneyin"
+        app:layout_constraintTop_toTopOf="@+id/imMoneyin" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="KES  42400"
+        app:layout_constraintEnd_toEndOf="@+id/etMoneyin"
+        app:layout_constraintTop_toBottomOf="@+id/etMoneyin" />
+
+    <ImageView
+        android:id="@+id/imMoneyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/etMoneyin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expense__1_" />
+
+    <TextView
+        android:id="@+id/etMoneyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="MONEY OUT"
+        app:layout_constraintStart_toEndOf="@+id/imMoneyout"
+        app:layout_constraintTop_toTopOf="@+id/imMoneyout" />
+
+    <TextView
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="KES 23700"
+        app:layout_constraintEnd_toEndOf="@+id/etMoneyout"
+        app:layout_constraintTop_toBottomOf="@+id/etMoneyout" />
+
+    <ImageView
+        android:id="@+id/imBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imMoneyin"
+        app:srcCompat="@drawable/balance__1_" />
+
+    <TextView
+        android:id="@+id/etBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="BALANCE"
+        app:layout_constraintStart_toEndOf="@+id/imBalance"
+        app:layout_constraintTop_toTopOf="@+id/imBalance" />
+
+    <TextView
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="KES 18700"
+        app:layout_constraintEnd_toEndOf="@+id/etBalance"
+        app:layout_constraintTop_toBottomOf="@+id/etBalance" />
+
+    <ImageView
+        android:id="@+id/imTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/et3"
+        app:layout_constraintTop_toBottomOf="@+id/imMoneyout"
+        app:srcCompat="@drawable/transactions" />
+
+    <TextView
+        android:id="@+id/etTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:text="TRANSACTIONS"
+        app:layout_constraintStart_toEndOf="@+id/imTransactions"
+        app:layout_constraintTop_toTopOf="@+id/imTransactions" />
+
+    <TextView
+        android:id="@+id/et4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="@+id/etTransactions"
+        app:layout_constraintTop_toBottomOf="@+id/etTransactions" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvwallet"
+        android:layout_width="381dp"
+        android:layout_height="488dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
